@@ -4,7 +4,7 @@
 <p align="center">
 <img src="assets/EXAONE_Symbol+BI_3d.png", width="400", style="margin: 40 auto;">
 <br>
-<!-- <p align="center"> 🤗 <a href="https://huggingface.co/collections/LGAI-EXAONE/exaone-40-686b2e0069800c835ed48375">Hugging Face</a> &nbsp | &nbsp 📝 <a href="#"> Blog</a> &nbsp | &nbsp 📑 <a href="https://www.lgresearch.ai/data/cdn/upload/EXAONE_4_0.pdf"> Technical Report </a>-->
+<!-- <p align="center"> 🤗 <a href="https://huggingface.co/collections/LGAI-EXAONE/exaone-40-686b2e0069800c835ed48375">Hugging Face</a> &nbsp | &nbsp 📝 <a href="https://www.lgresearch.ai/blog/view?seq=576"> Blog</a> &nbsp | &nbsp 📑 <a href="https://www.lgresearch.ai/data/cdn/upload/EXAONE_4_0.pdf"> Technical Report </a>-->
 <br>
 <br>
 
@@ -12,11 +12,14 @@
   <a href="https://huggingface.co/collections/LGAI-EXAONE/exaone-40-686b2e0069800c835ed48375" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/🤗-Huggingface-FC926C?style=for-the-badge" alt="Huggingface">
   </a>
-  <a href="#" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/📝-Blog_(comming_soon)-E343BD?style=for-the-badge" alt="Blog">
+  <a href="https://www.lgresearch.ai/blog/view?seq=576" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/📝-Blog-E343BD?style=for-the-badge" alt="Blog">
   </a>
   <a href="https://www.lgresearch.ai/data/cdn/upload/EXAONE_4_0.pdf" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/📑-Technical_Report-684CF4?style=for-the-badge" alt="Technical Report">
+  </a>
+  <a href="https://friendli.ai/suite/~/serverless-endpoints/LGAI-EXAONE/EXAONE-4.0-32B/overview" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/✈️-Try_on_FriendlyAI-2649BC?style=for-the-badge" alt="Technical Report">
   </a>
 </div>
 
@@ -54,6 +57,7 @@ For more details, please refer to our [technical report](https://www.lgresearch.
 The following tables show the evaluation results of each model, with reasoning and non-reasoning mode. The evaluation details can be found in the [technical report](https://www.lgresearch.ai/data/cdn/upload/EXAONE_4_0.pdf).
 
 - ✅ denotes the model has a hybrid reasoning capability, evaluated by selecting reasoning / non-reasoning on the purpose.
+- To assess Korean **practical** and **professional** knowledge, we adopt both the [KMMLU-Redux](https://huggingface.co/datasets/LGAI-EXAONE/KMMLU-Redux) and [KMMLU-Pro](https://huggingface.co/datasets/LGAI-EXAONE/KMMLU-Pro) benchmarks. Both datasets are publicly released!
 
 
 ### 32B Reasoning Mode

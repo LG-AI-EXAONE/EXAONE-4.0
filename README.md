@@ -4,7 +4,7 @@
 <p align="center">
 <img src="assets/EXAONE_Symbol+BI_3d.png", width="400", style="margin: 40 auto;">
 <br>
-<!-- <p align="center"> 🤗 <a href="https://huggingface.co/collections/LGAI-EXAONE/exaone-40-686b2e0069800c835ed48375">Hugging Face</a> &nbsp | &nbsp 📝 <a href="https://www.lgresearch.ai/blog/view?seq=576"> Blog</a> &nbsp | &nbsp 📑 <a href="https://www.lgresearch.ai/data/cdn/upload/EXAONE_4_0.pdf"> Technical Report </a>-->
+<!-- <p align="center"> 🤗 <a href="https://huggingface.co/collections/LGAI-EXAONE/exaone-40-686b2e0069800c835ed48375">Hugging Face</a> &nbsp | &nbsp 📝 <a href="https://www.lgresearch.ai/blog/view?seq=576"> Blog</a> &nbsp | &nbsp 📑 <a href="https://arxiv.org/abs/2507.11407"> Technical Report </a>-->
 <br>
 <br>
 
@@ -15,11 +15,11 @@
   <a href="https://www.lgresearch.ai/blog/view?seq=576" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/📝-Blog-E343BD?style=for-the-badge" alt="Blog">
   </a>
-  <a href="https://www.lgresearch.ai/data/cdn/upload/EXAONE_4_0.pdf" style="text-decoration: none;">
+  <a href="https://arxiv.org/abs/2507.11407" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/📑-Technical_Report-684CF4?style=for-the-badge" alt="Technical Report">
   </a>
   <a href="https://friendli.ai/suite/~/serverless-endpoints/LGAI-EXAONE/EXAONE-4.0-32B/overview" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/✈️-Try_on_FriendliAI-2649BC?style=for-the-badge" alt="Technical Report">
+    <img src="https://img.shields.io/badge/✈️-Try_on_FriendliAI-2649BC?style=for-the-badge" alt="FriendliAI">
   </a>
 </div>
 
@@ -42,7 +42,7 @@ In the EXAONE 4.0 architecture, we apply new architectural changes compared to p
 1. **Hybrid Attention**: For the 32B model, we adopt hybrid attention scheme, which combines *Local attention (sliding window attention)* with *Global attention (full attention)* in a 3:1 ratio. We do not use RoPE (Rotary Positional Embedding) for global attention for better global context understanding.
 2. **QK-Reorder-Norm**: We adopt the Post-LN (LayerNorm) scheme for transformer blocks instead of Pre-LN, and we add RMS normalization right after the Q and K projection. It helps yield better performance on downstream tasks despite consuming more computation.
 
-For more details, please refer to our [technical report](https://www.lgresearch.ai/data/cdn/upload/EXAONE_4_0.pdf).
+For more details, please refer to our [technical report](https://arxiv.org/abs/2507.11407).
 
 <br>
 
@@ -54,7 +54,7 @@ For more details, please refer to our [technical report](https://www.lgresearch.
 
 ## Performance
 
-The following tables show the evaluation results of each model, with reasoning and non-reasoning mode. The evaluation details can be found in the [technical report](https://www.lgresearch.ai/data/cdn/upload/EXAONE_4_0.pdf).
+The following tables show the evaluation results of each model, with reasoning and non-reasoning mode. The evaluation details can be found in the [technical report](https://arxiv.org/abs/2507.11407).
 
 - ✅ denotes the model has a hybrid reasoning capability, evaluated by selecting reasoning / non-reasoning on the purpose.
 - To assess Korean **practical** and **professional** knowledge, we adopt both the [KMMLU-Redux](https://huggingface.co/datasets/LGAI-EXAONE/KMMLU-Redux) and [KMMLU-Pro](https://huggingface.co/datasets/LGAI-EXAONE/KMMLU-Pro) benchmarks. Both datasets are publicly released!
@@ -1272,7 +1272,14 @@ The model is licensed under [EXAONE AI Model License Agreement 1.2 - NC](./LICEN
 
 ## Citation
 
-TBD
+```
+@article{exaone-4.0,
+  title={EXAONE 4.0: Unified Large Language Models Integrating Non-reasoning and Reasoning Modes},
+  author={{LG AI Research}},
+  journal={arXiv preprint arXiv:2507.11407},
+  year={2025}
+}
+```
 
 <br>
 

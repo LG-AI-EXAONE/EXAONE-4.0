@@ -1168,7 +1168,7 @@ You can run EXAONE models locally using llama.cpp by following these steps:
     llama-server -m EXAONE-4.0-32B-Q4_K_M.gguf \
         -c 131072 -fa -ngl 64 \
         --temp 0.6 --top-p 0.95 \
-        --jinja --chat-template-format chat_template.jinja \
+        --jinja --chat-template-file chat_template.jinja \
         --host 0.0.0.0 --port 8820 \
         -a EXAONE-4.0-32B-Q4_K_M
     ```

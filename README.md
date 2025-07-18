@@ -40,7 +40,7 @@ The EXAONE 4.0 model series consists of two sizes: a mid-size **32B** model opti
 In the EXAONE 4.0 architecture, we apply new architectural changes compared to previous EXAONE models as below:
 
 1. **Hybrid Attention**: For the 32B model, we adopt hybrid attention scheme, which combines *Local attention (sliding window attention)* with *Global attention (full attention)* in a 3:1 ratio. We do not use RoPE (Rotary Positional Embedding) for global attention for better global context understanding.
-2. **QK-Reorder-Norm**: We adopt the Post-LN (LayerNorm) scheme for transformer blocks instead of Pre-LN, and we add RMS normalization right after the Q and K projection. It helps yield better performance on downstream tasks despite consuming more computation.
+2. **QK-Reorder-Norm**: We reorder the LayerNorm position from the traditional Pre-LN scheme by applying LayerNorm directly to the attention and MLP outputs, and we add RMS normalization right after the Q and K projection. It helps yield better performance on downstream tasks despite consuming more computation.
 
 For more details, please refer to our [technical report](https://arxiv.org/abs/2507.11407).
 
@@ -1100,7 +1100,7 @@ print(tokenizer.decode(output[0]))
 
 We provide EXAONE 4.0 in various quantized formats including GPTQ, AWQ, and GGUF.
 
-For AWQ quantization, we omitted layernorm smoothing due to our use of Post-LN architecture.
+For AWQ quantization, we omitted layernorm smoothing due to our use of Reorder-LN architecture.
 
 All quantized models are available on our [HuggingFace collections](https://huggingface.co/collections/LGAI-EXAONE/exaone-40-686b2e0069800c835ed48375).
 

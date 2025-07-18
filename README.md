@@ -48,6 +48,7 @@ For more details, please refer to our [technical report](https://arxiv.org/abs/2
 
 ## News
 
+- 2025.07.18 : 🌟 EXAONE 4.0 is officially supported by [llama.cpp](https://github.com/ggml-org/llama.cpp)! Please check out the released version [here](https://github.com/ggml-org/llama.cpp/releases/tag/b5932).
 - 2025.07.15 : We release EXAONE 4.0, a hybrid reasoning model with enhanced usability including 32B and 1.2B. Please check out [these models](https://huggingface.co/collections/LGAI-EXAONE/exaone-40-686b2e0069800c835ed48375)!
 
 <br>
@@ -1111,11 +1112,7 @@ All quantized models are available on our [HuggingFace collections](https://hugg
 ### llama.cpp
 You can run EXAONE models locally using llama.cpp by following these steps:
 
-1. Install the latest version of llama.cpp, by cloning the our PR and building from source. Please refer to the official documentation about [building from source](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md).
-
-```bash
-git clone --single-branch -b add-exaone4 https://github.com/lgai-exaone/llama.cpp.git
-```
+1. Install the latest version of llama.cpp (version >= `b5932`). Please check the official [installation guide](https://github.com/ggml-org/llama.cpp?tab=readme-ov-file#quick-start) from llama.cpp.
 
 2. Download the EXAONE 4.0 model weights in GGUF format.
 
@@ -1166,12 +1163,12 @@ git clone --single-branch -b add-exaone4 https://github.com/lgai-exaone/llama.cp
 <details>
 <summary>OpenAI compatible server with `llama-server`</summary>
 
-3. Run llama-server with EXAONE 4.0 Jinja template.
+3. Run llama-server with EXAONE 4.0 Jinja template. You can find the [chat template file](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/main/chat_template.jinja) in this repository.
     ```bash
     llama-server -m EXAONE-4.0-32B-Q4_K_M.gguf \
         -c 131072 -fa -ngl 64 \
         --temp 0.6 --top-p 0.95 \
-        --jinja --chat-template-format chat_template_simple.jinja \
+        --jinja --chat-template-format chat_template.jinja \
         --host 0.0.0.0 --port 8820 \
         -a EXAONE-4.0-32B-Q4_K_M
     ```

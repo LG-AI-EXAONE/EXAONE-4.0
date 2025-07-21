@@ -1153,7 +1153,7 @@ You can run EXAONE models locally using llama.cpp by following these steps:
 4. Generate result with greedy decoding.
     ```bash
     llama-cli -m EXAONE-4.0-32B-Q4_K_M.gguf \
-        -fa -ngl 64 \
+        -fa -ngl 65 \
         --temp 0.0 --top-k 1 \
         -f inputs.txt -no-cnv
     ```
@@ -1166,7 +1166,7 @@ You can run EXAONE models locally using llama.cpp by following these steps:
 3. Run llama-server with EXAONE 4.0 Jinja template. You can find the [chat template file](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/main/chat_template.jinja) in this repository.
     ```bash
     llama-server -m EXAONE-4.0-32B-Q4_K_M.gguf \
-        -c 131072 -fa -ngl 64 \
+        -c 131072 -fa -ngl 65 \
         --temp 0.6 --top-p 0.95 \
         --jinja --chat-template-file chat_template.jinja \
         --host 0.0.0.0 --port 8820 \
@@ -1186,7 +1186,8 @@ You can run EXAONE models locally using llama.cpp by following these steps:
             ],
             "max_tokens": 1024,
             "temperature": 0.6,
-            "top_p": 0.95
+            "top_p": 0.95,
+            "chat_template_kwargs": {"enable_thinking": false}
         }'
     ```
 

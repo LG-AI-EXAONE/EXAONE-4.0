@@ -1173,9 +1173,7 @@ You can run EXAONE models locally using llama.cpp by following these steps:
         -a EXAONE-4.0-32B-Q4_K_M
     ```
 
-4. Use OpenAI chat completion to test the GGUF model.
-    > The implementation of `llama.cpp` would not be optimized for some usage including reasoning mode or agentic use. 
-    
+4. Use OpenAI chat completion to test the GGUF model.    
     ```bash
     curl -X POST http://localhost:8820/v1/chat/completions \
         -H "Content-Type: application/json" \

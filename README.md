@@ -48,7 +48,8 @@ For more details, please refer to our [technical report](https://arxiv.org/abs/2
 
 ## News
 
-- 2025.07.18 : 🌟 EXAONE 4.0 is officially supported by [llama.cpp](https://github.com/ggml-org/llama.cpp)! Please check out the released version [here](https://github.com/ggml-org/llama.cpp/releases/tag/b5932).
+- 2025.07.26 : 🌟 EXAONE 4.0 is officially supported by HuggingFace transformers! Please check out the [v4.54.0 release](https://github.com/huggingface/transformers/releases/tag/v4.54.0).
+- 2025.07.18 : EXAONE 4.0 is officially supported by [llama.cpp](https://github.com/ggml-org/llama.cpp)! Please check out the released version [here](https://github.com/ggml-org/llama.cpp/releases/tag/b5932).
 - 2025.07.15 : We release EXAONE 4.0, a hybrid reasoning model with enhanced usability including 32B and 1.2B. Please check out [these models](https://huggingface.co/collections/LGAI-EXAONE/exaone-40-686b2e0069800c835ed48375)!
 
 <br>
@@ -967,14 +968,7 @@ The following tables show the evaluation results of each model, with reasoning a
 
 ## Run EXAONE 4.0
 
-You should install the transformers library forked from the original, available in our [PR](https://github.com/huggingface/transformers/pull/39129).
-Once this PR is merged and released, we will update this section. 
-
-You can install the latest version of transformers with support for EXAONE 4.0 by following the command:
-
-```bash
-pip install git+https://github.com/lgai-exaone/transformers@add-exaone4
-```
+You should install the transformers library with version >= `4.54.0`.
 
 ### Non-reasoning mode
 

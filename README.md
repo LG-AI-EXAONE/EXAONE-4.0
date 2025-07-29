@@ -195,7 +195,7 @@ The following tables show the evaluation results of each model, with reasoning a
         <td align="center">64.7</td>
     </tr>
     <tr>
-        <td >Tau-bench (Airline)</td>
+        <td >Tau-Bench (Airline)</td>
         <td align="center">51.5</td>
         <td align="center">N/A</td>
         <td align="center">38.5</td>
@@ -204,7 +204,7 @@ The following tables show the evaluation results of each model, with reasoning a
         <td align="center">53.5</td>
     </tr>
     <tr>
-        <td >Tau-bench (Retail)</td>
+        <td >Tau-Bench (Retail)</td>
         <td align="center">62.8</td>
         <td align="center">N/A</td>
         <td align="center">10.2</td>
@@ -270,7 +270,7 @@ The following tables show the evaluation results of each model, with reasoning a
         <th>EXAONE 4.0 32B </th>
         <th>Phi 4</th>
         <th>Mistral-Small-2506</th>
-        <th>Gemma 3 27B</th>
+        <th>Gemma3 27B</th>
         <th>Qwen3 32B </th>
         <th>Qwen3 235B </th>
         <th>Llama-4-Maverick</th>
@@ -569,7 +569,7 @@ The following tables show the evaluation results of each model, with reasoning a
         <th>EXAONE Deep 2.4B</th>
         <th>Qwen 3 0.6B </th>
         <th>Qwen 3 1.7B </th>
-        <th>SmolLM3 3B </th>
+        <th>SmolLM 3 3B </th>
     </tr>
     <tr>
         <td align="center">Model Size</td>
@@ -749,7 +749,7 @@ The following tables show the evaluation results of each model, with reasoning a
         <th>Qwen 3 0.6B </th>
         <th>Gemma 3 1B</th>
         <th>Qwen 3 1.7B </th>
-        <th>SmolLM3 3B </th>
+        <th>SmolLM 3 3B </th>
     </tr>
     <tr>
         <td align="center">Model Size</td>

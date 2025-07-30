@@ -1210,13 +1210,23 @@ You can run the TensorRT-LLM server by following steps:
 
 2. Run server with the configuration
     ```bash
-    trtllm-serve serve [MODEL_PATH] --backend pytorch --extra_llm_api_options extra_llm_api_config.yaml
+    trtllm-serve serve LGAI-EXAONE/EXAONE-4.0-32B --backend pytorch --extra_llm_api_options extra_llm_api_config.yaml
     ```
 
 For more details, please refer to [the documentation](https://github.com/NVIDIA/TensorRT-LLM/tree/main/examples/models/core/exaone) of EXAONE from TensorRT-LLM.
 
+### vLLM
+
+vLLM officially supports EXAONE 4.0 models in the version of `0.10.0`. You can run the vLLM server by following command:
+
+```bash
+vllm serve LGAI-EXAONE/EXAONE-4.0-32B --enable-auto-tool-choice --tool-call-parser hermes --reasoning-parser qwen3
+```
+
+For more details, please refer to [the vLLM documentation](https://docs.vllm.ai/en/stable/).
+
 > [!NOTE]
-> Other inference engines including `vllm` and `sglang` don't support the EXAONE 4.0 officially now. We will update as soon as these libraries are updated.
+> Other inference engines including `sglang` don't support the EXAONE 4.0 officially now. We will update as soon as these libraries are updated.
 
 <br>
 

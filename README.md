@@ -19,7 +19,7 @@
     <img src="https://img.shields.io/badge/📑-Technical_Report-684CF4?style=for-the-badge" alt="Technical Report">
   </a>
   <a href="https://friendli.ai/suite/~/serverless-endpoints/LGAI-EXAONE/EXAONE-4.0-32B/overview" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/✈️-Try_on_FriendliAI-2649BC?style=for-the-badge" alt="FriendliAI">
+    <img src="https://img.shields.io/badge/✈️_commercial_purposes-Try_on_FriendliAI-2649BC?style=for-the-badge" alt="FriendliAI">
   </a>
 </div>
 

@@ -1220,7 +1220,7 @@ For more details, please refer to [the documentation](https://github.com/NVIDIA/
 vLLM officially supports EXAONE 4.0 models in the version of `0.10.0`. You can run the vLLM server by following command:
 
 ```bash
-vllm serve LGAI-EXAONE/EXAONE-4.0-32B --enable-auto-tool-choice --tool-call-parser hermes --reasoning-parser qwen3
+vllm serve LGAI-EXAONE/EXAONE-4.0-32B --enable-auto-tool-choice --tool-call-parser hermes --reasoning-parser deepseek_r1
 ```
 
 For more details, please refer to [the vLLM documentation](https://docs.vllm.ai/en/stable/).
